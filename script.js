@@ -80,13 +80,6 @@ function showOutcome1() {
 }
 outcome1.addEventListener('click', showOutcome1);
 
-function removeOutcome1 () {
-    outcomeText1.classList.remove('outcome-text-show')
-    outcomeIcon1.classList.remove('outcome-icon-remove')
-}
-outcome1.addEventListener('mouseover', removeOutcome1);
-
-
 const outcome2 = document.querySelector('.outcome2');
 const outcomeText2 = document.querySelector('.outcome-text2')
 const outcomeIcon2 = document.querySelector('.outcome-icon2')
@@ -96,13 +89,6 @@ function showOutcome2() {
     outcomeIcon2.classList.add('outcome-icon-remove')
 }
 outcome2.addEventListener('click', showOutcome2);
-
-function removeOutcome2 () {
-    outcomeText2.classList.remove('outcome-text-show')
-    outcomeIcon2.classList.remove('outcome-icon-remove')
-}
-outcome2.addEventListener('mouseover', removeOutcome2);
-
 
 const outcome3 = document.querySelector('.outcome3');
 const outcomeText3 = document.querySelector('.outcome-text3')
@@ -114,13 +100,6 @@ function showOutcome3() {
 }
 outcome3.addEventListener('click', showOutcome3);
 
-function removeOutcome3 () {
-    outcomeText3.classList.remove('outcome-text-show')
-    outcomeIcon3.classList.remove('outcome-icon-remove')
-}
-outcome3.addEventListener('mouseover', removeOutcome3);
-
-
 const outcome4 = document.querySelector('.outcome4');
 const outcomeText4 = document.querySelector('.outcome-text4')
 const outcomeIcon4 = document.querySelector('.outcome-icon4')
@@ -130,9 +109,3 @@ function showOutcome4() {
     outcomeIcon4.classList.add('outcome-icon-remove')
 }
 outcome4.addEventListener('click', showOutcome4);
-
-function removeOutcome4 () {
-    outcomeText4.classList.remove('outcome-text-show')
-    outcomeIcon4.classList.remove('outcome-icon-remove')
-}
-outcome4.addEventListener('mouseover', removeOutcome4);

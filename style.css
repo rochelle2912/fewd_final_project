@@ -233,17 +233,29 @@ main {
 
 @media (min-width: 768px) {
 
-    .mobile-gallery {
+    /* .mobile-gallery {
         display: none;
     }
-    
-    main {
+     */
+
+     .mobile-gallery img {
+        width: 40%;
+        border-radius: 5px;
+        margin: 30px;
+        height: 20%;
+    }
+
+    /* main {
         background-color: #f2f2f2;
         display: grid;
         grid-column: 1/4;
         padding: 20px;
         text-align: center;
         justify-content: center;
+    } */
+
+    .popular-breeds {
+        display: none;
     }
     
     .popular-breed11 {
@@ -272,10 +284,10 @@ main {
         display: none;
     } */
 
-    .popular-breeds {
+    /* .popular-breeds {
         display: grid;
         grid-template-columns: 50% 50%;
-    }
+    } */
 
     .img_wrap {
         position: relative;
@@ -318,6 +330,11 @@ main {
 }
 
 @media (min-width: 960px) {
+
+    .mobile-gallery {
+        display: none;
+    }
+    
 
     main {
         display: grid;
@@ -634,7 +651,7 @@ main {
 .inner-container {
     display: grid;
     grid-template-columns: 250px 250px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .outcome {
@@ -642,10 +659,16 @@ main {
     align-items: center;
     background-color: rgba(169, 169, 169, 0.4);
     margin: 30px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 50px;
     justify-content: center;
     position: relative;
+    height: 100px;
+}
+
+.outcome:hover {
+    cursor: pointer;
+    background-color: rgba(169, 169, 169, 0.8);
 }
 
 .outcome-text {
@@ -668,6 +691,7 @@ main {
 
 .outcome-text-show {
     opacity: 1;
+    padding: 0px 10px;
 }
 
 .outcome-icon-remove {
@@ -682,6 +706,7 @@ main {
     .outcome {
         width: 100%;
         position: relative;
+        padding: 20px;
     }
 
 }
@@ -702,6 +727,12 @@ main {
     .outcome {
         width: 100%;
         position: relative;
+
+    }
+
+    .outcome:hover {
+        cursor:auto;
+        background-color: rgba(169, 169, 169, 0.4);
     }
 
     .outcome-icon {
@@ -766,6 +797,7 @@ main .button {
 
     main .button {
     margin-left: 30%;
+    margin-top: 80px;
     }
 
 }
@@ -774,6 +806,7 @@ main .button {
     
     main .button {
     margin-left: 40%;
+    margin-top: 20px;
     }
 }
 
