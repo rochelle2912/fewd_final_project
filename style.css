@@ -1,0 +1,865 @@
+body {
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr; 
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-column: 1/4;
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: grey;
+    background-color: white;
+    padding: 0px 20px 0px 20px;
+    height: 70px;
+    font-size: 25px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.top-nav h5 {
+    display: none;
+}
+
+nav a {
+    display: none;
+    font-size: 1.6vw;
+}
+
+.logo {
+    width: 230px;
+}
+
+#hamburger-button {
+    width: 30px;
+    display: block;
+}
+
+@media (min-width: 960px) {
+
+    #hamburger-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        display: flex;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-size: 20px;
+        color: grey;
+        display: flex;
+    }
+
+    .top-nav h5 {
+        display: block;
+    }
+
+    .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: white;
+        margin-top: 19px;
+        z-index: 1;
+        width: 200px;
+    }
+
+    .sub-menu a {
+        display: block;
+        padding: 20px;
+    }
+
+    .sub-menu a:hover {
+        background-color: lightgrey;
+        width: 160px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover {
+        height: 60px;
+        padding-top: 40px;
+    }
+
+    .dropdown:hover .sub-menu {
+        display: block;
+    }
+}
+
+/* SIDE MENU */
+
+#menu-close-button {
+    width: 20px;
+    margin-left: 96%;
+    margin-top: 15px;
+}
+
+#side-menu {
+    background-image: url("https://bhf-cdn.azureedge.net/bhf-blob-prod/0056625_yoop-grey-dog-wallpaper_600.jpeg");
+    padding: 8px 16px;
+    transition: all 420ms ease-in-out;
+    /* opacity: 0.95; */
+}
+
+.side-menu-content {
+    /* padding-left: 80px; */
+    list-style-type: none;
+    font-size: 24px;
+    margin: 25px;
+
+}
+
+.side-menu-content li {
+    padding: 30px;
+    cursor: pointer;
+}
+
+.side-menu-content li:hover {
+    background-color: whitesmoke;
+}
+
+.side-menu-design {
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+}
+
+.side-menu-position {
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.side-menu-position h2 {
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+/* Animation for side-menu */
+.show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+/* SEARCH HEADER */
+
+.main-search {
+    display: grid;
+    grid-column: 1/4;
+    background-image: url("https://animalcorner.org/wp-content/uploads/2020/05/Mini-Australian-Shepherd.png");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover;
+    justify-content: center;
+}
+
+.finder-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 400px;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.search-box {
+    border-radius: 5px;
+    height: 20px;
+}
+
+@media (min-width: 960px) {
+
+    .main-search {
+        justify-content: left;
+        padding-left: 200px;
+        height: 600px;
+    }
+
+    /* .search-box {
+        margin-left: 200px;
+    } */
+}
+
+
+/* MAIN SECTION / POPULAR BREEDS */
+
+.popular-breeds {
+    display: none;
+
+}
+
+.mobile-gallery img {
+    width: 500px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+main {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-column: 1/4;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    border-left: lightgrey solid 1px;
+    border-right: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
+
+
+@media (min-width: 768px) {
+
+    .mobile-gallery {
+        display: none;
+    }
+    
+    main {
+        background-color: #f2f2f2;
+        display: grid;
+        grid-column: 1/4;
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .popular-breed11 {
+        display: none;
+    }
+    
+    .popular-breed12 {
+        display: none;
+    }
+
+    
+    .img_wrap {
+        position: relative;
+        margin: 40px;
+        text-align: center;
+    }
+    
+    .img_img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    
+    
+    /* .img_description {
+        display: none;
+    } */
+
+    .popular-breeds {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .img_wrap {
+        position: relative;
+        margin: 40px;
+        text-align: center;
+    }
+
+    .img_img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+
+    .img_description {
+        position: absolute;
+        top: 0;
+        background: lightgrey;
+        opacity: 0;
+        border-radius: 5px;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-size: 90%;
+    }
+
+    .img_wrap:hover .img_description {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    .img_wrap:hover .img_img {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 960px) {
+
+    main {
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+    .popular-breeds {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        margin: 40px;
+    }
+
+    
+    .img_description {
+        font-size: 100%;
+    }
+
+    .popular-breed11 {
+        display: inline;
+    }
+
+    .popular-breed12 {
+        display: inline;
+    }
+}
+
+/* SIDE BAR  / TESTIMONIALS */
+
+.side-nav {
+    display: none;
+} 
+
+.slideshow-container {
+    background-color: #f9f9f9;
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 5/6;
+    padding: 60px;
+    text-align: center;
+    justify-content: center;
+}
+
+.dog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.group, .mySlides  {
+    position: relative;
+    background-color: whitesmoke;
+    border: grey solid 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.group-2 {
+    display: none;
+}
+
+.group-3 {
+    display: none;
+}
+
+.group-4 {
+    display: none;
+}
+
+.group-5 {
+    display: none;
+}
+
+.group-6 {
+    display: none;
+}
+
+.dog-review {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.breed-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightgrey;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+@media (min-width: 768px) {
+
+    .side-nav {
+        background-color: #f9f9f9;
+        grid-column: 1/4;
+        grid-row: 5/6;
+        padding: 20px;
+        text-align: center;
+        display: block;
+    }
+
+    .side-nav p {
+        font-size: 90%;
+    }
+
+    .testimonials {
+        display: flex;
+    }
+
+    .testimonials img {
+        height: 50%;
+    }
+
+    .group {
+        width: 30%;
+        margin: 10px;
+        margin-bottom: 5px;
+    }
+
+    .group-2 {
+        display: block;
+    }
+
+    .group-3 {
+        display: block;
+    }
+
+    .outcome {
+        width: 20%;
+        justify-content: center;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .side-nav {
+        background-color: #ededed;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 3/5;
+        padding: 20px;
+        text-align: center;
+        width: 400px;
+    }
+
+    .testimonials p {
+        font-size: 100%;
+    }
+
+    .testimonials {
+        display: block;
+    }
+
+    .testimonials img {
+        width: 100%;
+    }
+
+    .group {
+        width: 95%;
+        margin-bottom: 60px;
+    }
+
+    .group-4 {
+        display: block;
+    }
+
+    .group-5 {
+        display: block;
+    }
+
+    .group-6 {
+        display: block;
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    .breed-badge {
+        padding: 10px;
+        font-size: 100%;
+    }
+}
+
+/* BOTTOM NAV / POUND SECTION */
+
+.bottom-nav {
+    display: grid;
+    justify-content: center;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    text-align: center;
+    padding: 10px;
+    background-size: cover;
+    align-items: center;
+}
+
+.pound-box {
+    background-color: rgba(211, 211, 211, .8);
+    height: 400px;
+    margin: 90px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.rescue-centres {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.bottom-nav img {
+    height: 100px;
+    margin: 0px 50px 0px 50px;
+}
+
+@media (min-width: 960px) {
+
+    .bottom-nav {
+        display: grid;
+        background-image: url("https://paradepets.com/.image/t_share/MTkxMzY1Nzg4NDA1NDA5MzEz/family-dog-breeds-jpg.jpg");
+        justify-content: center;
+        grid-row: 4/5;
+        grid-column: 2/4;
+        text-align: center;
+        padding: 5px;
+        max-width: 100%;
+        background-size: cover;
+    }
+
+    .pound-box {
+        height: 600px;
+    }
+
+    .pound2 img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .pound4 img {
+        width: 250px;
+    }
+
+    .pound {
+        position: relative;
+    }
+
+    .pound-description {
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        justify-content: center;
+        background-color: lightgray;
+        border-radius: 100px;
+    }
+
+    .pound:hover .pound-description {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    .rescue-centres {
+        padding: 60px;
+    }
+
+    .pound-box .button {
+        margin: 60px;
+    }
+
+    .pound-box p {
+        font-size: 20px;
+        margin-top: 80px;
+    }
+
+    .tv-remote {
+        display: none;
+    }
+}
+
+/* HOW WERE TRACKING BOX */
+
+.progress-tracker {
+    display: grid;
+    grid-column: 1/4;
+    background-image: url("https://bhf-cdn.azureedge.net/bhf-blob-prod/0056625_yoop-grey-dog-wallpaper_600.jpeg");
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(192, 192, 192, 0.5);
+    justify-content: center;
+}
+
+.inner-container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: space-around;
+}
+
+.outcome {
+    display: flex;
+    align-items: center;
+    background-color: rgba(169, 169, 169, 0.4);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+.outcome-text {
+    text-align: center;
+    padding: 0px 10px;
+    justify-content: space-around;
+    position: absolute;
+    opacity: 0;
+}
+
+.outcome-text p {
+    margin-top: -20px;
+}
+
+.outcome-icon {
+    height: 70px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.outcome-text-show {
+    opacity: 1;
+}
+
+.outcome-icon-remove {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .inner-container {
+        display: flex;
+    }
+
+    .outcome {
+        width: 100%;
+        position: relative;
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .inner-container {
+        display: flex;
+    }
+
+    .outcome-text {
+        display: block;
+        position: relative;
+        text-align: left;
+        opacity: 1;
+    }
+
+    .outcome {
+        width: 100%;
+        position: relative;
+    }
+
+    .outcome-icon {
+        display: block;
+    }
+
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-column: 1/4;
+    /* grid-row: 6/7; */
+    border-left: lightgrey solid 1px;
+    border-right: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+    /* position: fixed; */
+    /* bottom: 0;
+    left: 0;
+    width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+
+.button {
+    color: white;
+    width: 300px;
+    padding: 10px;
+    height: 35px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #14a96d;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.main-search .button {
+    margin: 20px 40px;
+}
+
+main .button {
+    margin-left: 26%;
+}
+
+.bottom-nav .button {
+    margin-left: 39%;
+}
+
+@media (min-width: 768px) {
+
+    main .button {
+    margin-left: 30%;
+    }
+
+}
+
+@media (min-width: 960px) {
+    
+    main .button {
+    margin-left: 40%;
+    }
+}
+
+/* FORM */
+
+#donation-btn {
+    display: none;
+}
+
+form {
+    display: none;
+}
+
+@media (min-width: 960px) {
+    
+#donation-btn {
+    width: 150px;
+    margin-left: 1800px;
+    margin-top: 450px;
+    display: block;
+}
+
+#donation-close-btn {
+    width: 20px;
+    margin-left: 95%;
+}
+
+form {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    transform: scale(0);
+    animation: spingrow 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 300px;
+    left: 33%;
+    z-index: 20;
+}
+
+@keyframes spingrow {
+    0% {
+      transform: rotateZ(0) scale(0);
+    }
+    100% {
+      transform: rotateZ(360deg) scale(1);
+    }
+}
+
+.inputs {
+    border-radius: 5px;
+}
+
+form h3 {
+    text-align: center;
+    color: green;
+}
+
+#submit-button {
+    margin-left: 40%;
+}
+
+/* Animation for form */
+
+.form-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-form {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.show-form form {
+    opacity: 1;
+    transform: translateX(0%);
+    display: block;
+}
+
+}

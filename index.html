@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src=" https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js"></script>
+  <script defer src="script.js"></script>
+  <title>Pet Finder</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Sans+Pro:wght@300&display=swap"
+  rel="stylesheet">
+
+<link href="https://fonts.cdnfonts.com/css/pawprints" rel="stylesheet">
+
+<body>
+  <header>
+
+    <!-- Nav Bar - Top -->
+    <nav class="top-nav">
+      <img class="logo" src="https://i.imgur.com/YPnQ9fU.png">
+
+      <div class="nav-links">
+        <h5>Find a breed based on:</h5>
+        <div class="dropdown">
+          <a href="dropbtn">Lifestyle</a>
+          <div class="sub-menu">
+            <a href="#">Active</a>
+            <a href="#">Sedentary</a>
+            <a href="#">Work-from-home</a>
+            <a href="#">Long Work Days</a>
+            <a href="#">See more</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="dropbtn">Average Size</a>
+          <div class="sub-menu">
+            <a href="#">Toy</a>
+            <a href="#">Small</a>
+            <a href="#">Medium</a>
+            <a href="#">Large</a>
+            <a href="#">Giant</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="dropbtn">Temperament</a>
+          <div class="sub-menu">
+            <a href="#">High-energy</a>
+            <a href="#">Lazy</a>
+            <a href="#">Affectionate</a>
+            <a href="#">Aloof</a>
+            <a href="#">See more</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="dropbtn">Working Style</a>
+          <div class="sub-menu">
+            <a href="#">Service Dogs</a>
+            <a href="#">Herding Dogs</a>
+            <a href="#">Guard Dogs</a>
+            <a href="#">Hunting Dogs</a>
+            <a href="#">See more</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <a href="dropbtn">Handler Experience</a>
+          <div class="sub-menu">
+            <a href="#">Beginner</a>
+            <a href="#">Intermediate</a>
+            <a href="#">Experienced</a>
+            <a href="#">Professional Trainer</a>
+          </div>
+        </div>
+
+        <!-- Mobile Pop-up Side menu-->
+        <div class="header-right-mobile">
+          <img src="https://cdn-icons-png.flaticon.com/512/5135/5135168.png" alt="hamburger-icon" id="hamburger-button">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="side-menu-position side-menu-design" id="side-menu">
+    <img src="https://www.svgrepo.com/show/49938/close-cross.svg" alt="Close this menu" id="menu-close-button">
+    <h2>Find a breed based on:</h2>
+    </header>
+    <ul class="side-menu-content">
+      <li>Lifestyle</li>
+      <li>Average Size</li>
+      <li>Temperament</li>
+      <li>Working Style</li>
+      <li>Handler Experience</li>
+      <li class="see-more-menu">See More</li>
+    </ul>
+  </aside>
+
+
+  <!-- Search Box Main   -->
+
+  <section class="main-search">
+    <div class="search-box">
+      <div class="finder-box">
+        <h2> Finding the perfect dog for your family can be difficult. Search our database of over 50 breeds.</h2>
+        <input type="text" placeholder="Type breed here..." name="search-box">
+        <a href="search.html" class="button">Search</a>
+      </div>
+    </div>
+
+    <img src="https://i0.wp.com/amigurumibb.com/wp-content/uploads/2018/03/PayPal-Donate-Button-Transparent.png?fit=532%2C247&ssl=1&w=640
+    alt="donation-btn" id="donation-btn">
+  </section>
+
+  <!-- Testimonials - Side Bar -->
+
+  <section class="side-nav">
+    <h1>Testimonials</h1>
+    <h4>Our website has been helping families since 2022. Check out some of our positive reviews below:</h4>
+    <div class='testimonials'>
+
+      <div class="group group-1">
+        <img class="dog-image"
+          src="https://www.purina.com.au/-/media/project/purina/main/breeds/puppies/puppy-kelpie.jpg?h=475&la=en&w=825&hash=784E7056A7E366A9CC87EF8DA17EC1E5" />
+        <div class="dog-review">
+          <p> Thank you Woofers for helping me choose the perfect breed for my family. Our rescue kelpie girl matches
+            the energy of my family and has been great on the farm. </p>
+        </div>
+        </a>
+        <span class="breed-badge">Kelpie</span>
+      </div>
+
+      <div class="group group-2">
+        <img class="dog-image" src="https://i.ytimg.com/vi/C9prziayqqk/maxresdefault.jpg" />
+        <div class="dog-review">
+          <p> Ahh, who doesn't love a golden retriever? After visiting your site, I decided that a GR is the perfect
+            family dog. We love our smiley boy. </p>
+        </div>
+        </a>
+        <span class="breed-badge">Golden Retriever</span>
+      </div>
+
+      <div class="group group-3">
+        <img class="dog-image"
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F07%2F21%2Fbernese-mountain-dog-names-dpddm-2000.jpg&q=60" />
+        <div class="dog-review">
+          <p> I hadn't heard about Bernese Mountain dogs until finding your website. We love our gentle giant and his
+            temperant is perfect for our young family. </p>
+        </div>
+        </a>
+        <span class="breed-badge">Bernese Mountain Dog</span>
+      </div>
+
+      <div class="group group-4">
+        <img class="dog-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQdsMVR9TCrHUpG9Ku8VgerWKUxr_YVrUEg&usqp=CAU" />
+        <div class="dog-review">
+          <p> I've also loved Blue Heelers but we weren't sure if they would be the right dog to have around. After
+            visiting website your website we chose the Aussie Shepard. They have the energy of a BH without the
+            velocirator tendancies. </p>
+        </div>
+        </a>
+        <span class="breed-badge">Australian Shepard</span>
+      </div>
+
+      <div class="group group-5">
+        <img class="dog-image" src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg" />
+        <div class="dog-review">
+          <p> I've always wanted a guard dog to keep me safe at home. Your website made it clear that rottweilers would
+            provide the perfect balance of safety and goofiness. Thank you! </p>
+        </div>
+        </a>
+        <span class="breed-badge">Rottweiler</span>
+      </div>
+
+      <div class="group group-6">
+        <img class="dog-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPb8D4Aaw9d8GhwNsm1m3YRS13SPIPx8pJg&usqp=CAU" />
+        <div class="dog-review">
+          <p>I love this website! I'm a tough guy looking for a big scary dog and I found it. Don't f**k with me or my
+            dog will f**k you up!</p>
+        </div>
+        </a>
+        <span class="breed-badge">Cane Corso</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Section - Popular Breeds -->
+
+  <main>
+
+    <h1> Popular Breeds </h1>
+    <h3> Choosing a dog is a decision that shouldn't be taken lightly. Click on the popular breeds of dog below to find
+      out about their needs and suitability:</h3>
+
+    <div class="mobile-gallery">
+      <a href="img/gallery/Kelpie.png"><img
+          src="https://doglime.com/wp-content/uploads/2019/03/australian-kelpie-dog_information.jpg" alt=""></a>
+
+      <a href="img/gallery/Labrador Retriever.png"><img
+          src="https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1670938235.1927571/fun-facts-about-labrador-retrievers.jpg"
+          alt=""></a>
+
+      <a href="img/gallery/Daschund.png"><img
+          src="https://www.thesprucepets.com/thmb/8UgAnzf_7o7i7qPPr528XtM0IW8=/2121x0/filters:no_upscale():strip_icc()/GettyImages-839279536-313d30c290584bc0a207bc6243263bd4.jpg"
+          alt=""></a>
+
+      <a href="img/gallery/Golden Retriever.png"><img
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F16%2Fgolden-retriever-177213599-2000.jpg"
+          alt=""></a>
+
+      <a href="img/gallery/Poodle.png"><img
+          src="https://cdn.britannica.com/39/233239-050-50C0C3C5/standard-poodle-dog.jpg" alt=""></a>
+
+      <a href="img/gallery/Corgi.png"><img src="https://hellobark.com/wp-content/uploads/corgi-breed.jpg" alt=""></a>
+
+      <a href="img/gallery/Doberman.png"><img
+          src="https://media.graphassets.com/output=format:webp/YVLzaLwOQXiy9RQFwKpQ" alt=""></a>
+
+      <a href="img/gallery/Bulldog.png"><img
+          src="https://www.telegraph.co.uk/content/dam/world-news/2022/02/02/TELEMMGLPICT000284470214_trans_NvBQzQNjv4BqyuLFFzXshuGqnr8zPdDWXhbQKbwj1ZsnNMhuR7O6ySI.jpeg"
+          alt=""></a>
+    </div>
+
+    <div class="popular-breeds">
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://doglime.com/wp-content/uploads/2019/03/australian-kelpie-dog_information.jpg" />
+        <div class="img_description">BREED: Kelpie<br>GROUP: Herding (UKC)<br>HEIGHT: 17 to 20 inches tall at the
+          shoulder<br>WEIGHT: 30 to 45 pounds<br>LIFE SPAN: 10 to 13 years<br>TEMPERAMENT: Intelligent, eager,
+          energetic, loyal, alert, friendly<br>HYPOALLERGENIC: No<br>ORIGIN: Australia</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1670938235.1927571/fun-facts-about-labrador-retrievers.jpg" />
+        <div class="img_description">BREED: Labrador Retriever <br>GROUP: Sporting <br>HEIGHT: 21.5 to 24.5 inches <br>WEIGHT: 65 to 80 pounds (male), 55 to 70 pounds (female) <br>LIFE
+          SPAN: 10 to 12 years <br>TEMPERAMENT: Friendly, active, companionable <br>HYPOALLERGENIC: No <br>ORIGIN:
+          Newfoundland/United Kingdom</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://www.thesprucepets.com/thmb/8UgAnzf_7o7i7qPPr528XtM0IW8=/2121x0/filters:no_upscale():strip_icc()/GettyImages-839279536-313d30c290584bc0a207bc6243263bd4.jpg" />
+        <div class="img_description">BREED: Dachshund<br>GROUP: Hound<br>HEIGHT: 8 to 9 inches (standard); 5 to 6 inches
+          (miniature) <br>WEIGHT: 16 to 32 pounds (standard) <br>LIFE SPAN: 12 to 16
+          years<br>TEMPERAMENT: Clever, playful, stubborn, devoted, lively, independent, courageous<br>HYPOALLERGENIC:
+          No<br>ORIGIN: Germany</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F08%2F16%2Fgolden-retriever-177213599-2000.jpg" />
+        <div class="img_description">BREED: Golden Retriever<br>GROUP: Sporting<br>HEIGHT: 23 to 24 inches (males); 21.5
+          to 22.5 inches (females)<br>WEIGHT: 55 to 75 pounds <br>LIFE SPAN: 10 to 12
+          years<br>TEMPERAMENT: Trustworthy, intelligent, playful, energetic.<br>HYPOALLERGENIC: No<br>ORIGIN: United
+          Kingdom, Scotland</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img" src="https://cdn.britannica.com/39/233239-050-50C0C3C5/standard-poodle-dog.jpg" />
+        <div class="img_description">BREED: Poodle<br>GROUP: Non-Sporting<br>HEIGHT: Up to 10 inches (toy), 10 to 15
+          inches (miniature), over 15 inches (standard) <br>WEIGHT: 4 to 6 pounds (toy), 10 to 15 pounds (miniature), 40
+          to 70 pounds (standard) <br>LIFE SPAN: 10 to 18 years<br>TEMPERAMENT: Intelligent, affectionate,
+          active<br>HYPOALLERGENIC: Yes<br>ORIGIN: Germany</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img" src="https://hellobark.com/wp-content/uploads/corgi-breed.jpg" />
+        <div class="img_description">BREED: Welsh Corgi <br>GROUP: Herding<br>WEIGHT: 25 to 38 pounds<br>HEIGHT: 10 to
+          13 inches<br>LIFE SPAN: 12 to 15 years<br>TEMPERAMENT: Affectionate, friendly, playful, intelligent, active,
+          alert<br>HYPOALLERGENIC: No<br>ORIGIN: Wales</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img" src="https://media.graphassets.com/output=format:webp/YVLzaLwOQXiy9RQFwKpQ" />
+        <div class="img_description">BREED: Doberman Pinscher<br>GROUP: Working<br>HEIGHT: 24 to 28 inches<br>WEIGHT: 65
+          to 100 pounds<br>LIFE SPAN: 10 to 12 years<br>TEMPERAMENT: Intelligent, loyal, alert, energetic,
+          attentive<br>HYPOALLERGENIC: No<br>ORIGIN: Germany</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://www.telegraph.co.uk/content/dam/world-news/2022/02/02/TELEMMGLPICT000284470214_trans_NvBQzQNjv4BqyuLFFzXshuGqnr8zPdDWXhbQKbwj1ZsnNMhuR7O6ySI.jpeg" />
+        <div class="img_description">BREED: British Bulldog<br>GROUP: Non-Sporting<br>HEIGHT: 14 to 15 inches at the
+          shoulder<br>WEIGHT: 40 to 50 pounds<br>LIFE SPAN: 8 to 10 years<br>TEMPERAMENT: Willful, friendly, gregarious,
+          docile<br>HYPOALLERGENIC: No<br>ORIGIN: England</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://i0.wp.com/www.wagpets.com/wp-content/uploads/2016/12/staffy.jpg?fit=1920%2C1200&ssl=1" />
+        <div class="img_description">BREED: Staffordshire Bull Terrier<br>GROUP: Terrier<br>HEIGHT: 14 to 16 inches at
+          the shoulder<br>WEIGHT: 24 to 38 pounds<br>COAT: Short and smooth<br>LIFE SPAN: 12 to 14 years<br>TEMPERAMENT:
+          Fearless, bold, affectionate, loyal, intelligent, reliable<br>HYPOALLERGENIC: No<br>ORIGIN: England</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://cdn.britannica.com/49/233849-050-2ECC4F03/Yorkshire-terrier-dog-running.jpg" />
+        <div class="img_description">BREED: Yorkshire Terrier<br>GROUP: Toy<br>HEIGHT: 7 to 8 inches<br>WEIGHT: 7
+          pounds<br>COAT: Long, silky<br>LIFE SPAN: 11 to 15 years<br>TEMPERAMENT: Affectionate, bright,
+          playful<br>HYPOALLERGENIC: Yes<br>ORIGIN: England</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://media-be.chewy.com/wp-content/uploads/2021/06/02102132/Pomeranian_Featured-Image-1024x615.jpg" />
+        <div class="img_description">BREED: Pomeranian<br>GROUP: Toy<br>HEIGHT: 6 to 7 inches<br>WEIGHT: 3 to 7
+          pounds<br>COAT: Long double coat<br>LIFE SPAN: 12 to 16 years<br>TEMPERAMENT: Bold, alert, lively,
+          affectionate<br>HYPOALLERGENIC: No<br>ORIGIN: Germany/Poland</div>
+      </div>
+
+      <div class="img_wrap">
+        <img class="img_img"
+          src="https://www.purina.com.au/-/media/project/purina/main/breeds/dog/dog_whippet_desktop.jpg?h=475&la=en&w=825&hash=851259F9EA90489EBE9A922109C93382" />
+        <div class="img_description">BREED: Whippet<br>GROUP: Hound<br>HEIGHT: 18 to 22 inches<br>WEIGHT: 25 to 40
+          pounds<br>LIFE SPAN: 12 to 15 years<br>TEMPERAMENT: Quiet, friendly, gentle, calm, affectionate, Peaceful,
+          Sweet-Tempered<br>HYPOALLERGENIC: No<br>ORIGIN: England</div>
+      </div>
+
+    </div>
+    <a href="More.html" class="button">More breeds</a>
+  </main>
+
+  <!-- BOTTON NAV / POUND BOX -->
+
+  <nav class='bottom-nav'>
+    <div class='pound-box'>
+      <h1>Save a dog!</h1>
+      <h3> Rescue centres near you!</h3>
+
+      <div class="rescue-centres">
+
+        <div class="pound pound1">
+          <a href="link address"><img
+              src="https://secondchanceanimalrescue.com.au/wp-content/uploads/2017/07/menu-logo.png"></a>
+          <div class="pound-description">
+            <h4>Second Chance Animal Rescue</h4>
+            <h5>23 Grasslands Ave, Craigieburn 3064</h5>
+          </div>
+        </div>
+
+        <div class="pound pound2">
+          <a href="link address"><img src="https://c8n4j9m4.stackpathcdn.com/wp-content/uploads/2014/04/logo.png"></a>
+          <div class="pound-description">
+            <h4>Save-A-Dog Scheme</h4>
+            <h5>36 Weir St, Glen Iris 3146</h5>
+          </div>
+        </div>
+
+        <div class="pound pound3">
+          <a href="link address"><img
+              src="https://dogshome.com/wp-content/themes/ldhtheme/assets/images/LDH_logo.svg"></a>
+          <div class="pound-description">
+            <h4>The Lost Dogs Home</h4>
+            <h5>2 Grace St, North Melbourne </h5>
+          </div>
+        </div>
+
+        <div class="pound pound4">
+          <a href="link address"><img src="https://rspcavic.org/wp-content/uploads/2021/12/logo.svg"></a>
+          <div class="pound-description">
+            <h4>The Lost Dogs Home</h4>
+            <h5>2 Grace St, North Melbourne </h5>
+          </div>
+        </div>
+      </div>
+
+      <a href="More.html" class="button">See More</a>
+
+      <p> Sadly, many dogs are abandoned by their owners. Woofers encourages handlers to consider a rescue dog instead
+        of seeking a breeder. Woofers strongly advises against purchasing a dog from a pet shop or backyard breeder.</p>
+  </nav>
+
+  <!-- MOBILE TESTIMONIALS SLIDESHOW -->
+
+  <div class="slideshow-container">
+
+    <h2>Testimonials</h2>
+    <div class="mySlides">
+
+      <img class="slide-image"
+        src="https://www.purina.com.au/-/media/project/purina/main/breeds/puppies/puppy-kelpie.jpg?h=475&la=en&w=825&hash=784E7056A7E366A9CC87EF8DA17EC1E5" />
+      <div class="dog-review">
+        <p> Thank you Woofers for helping me choose the perfect breed for my family. Our rescue kelpie girl matches
+          the energy of my family and has been great on the farm. </p>
+      </div>
+      <span class="breed-badge">Kelpie</span>
+    </div>
+
+    <div class="mySlides">
+      <img class="slide-image" src="https://i.ytimg.com/vi/C9prziayqqk/maxresdefault.jpg" />
+      <div class="dog-review">
+        <p> Ahh, who doesn't love a golden retriever? After visiting your site, I decided that a GR is the perfect
+          family dog. We love our smiley boy. </p>
+      </div>
+      <span class="breed-badge">Golden Retriever</span>
+    </div>
+
+    <div class="mySlides">
+      <img class="slide-image"
+        src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F07%2F21%2Fbernese-mountain-dog-names-dpddm-2000.jpg&q=60" />
+      <div class="dog-review">
+        <p> I hadn't heard about Bernese Mountain dogs until finding your website. We love our gentle giant and his
+          temperant is perfect for our young family. </p>
+      </div>
+      <span class="breed-badge">Bernese Mountain Dog</span>
+    </div>
+
+    <div class="mySlides">
+      <img class="slide-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQdsMVR9TCrHUpG9Ku8VgerWKUxr_YVrUEg&usqp=CAU" />
+      <div class="dog-review">
+        <p> After visiting your website we chose the Aussie Shepard. They have the energy of our Blue Heeler without the
+          velociraptor tendancies. </p>
+      </div>
+      <span class="breed-badge">Australian Shepard</span>
+    </div>
+
+    <div class="mySlides">
+      <img class="slide-image" src="https://cdn.britannica.com/69/234469-050-B883797B/Rottweiler-dog.jpg" />
+      <div class="dog-review">
+        <p> I've always wanted a guard dog to keep me safe at home. Your website made it clear that rottweilers would
+          provide the perfect balance of safety and goofiness.</p>
+      </div>
+      <span class="breed-badge">Rottweiler</span>
+    </div>
+
+    <div class="mySlides">
+      <img class="slide-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPb8D4Aaw9d8GhwNsm1m3YRS13SPIPx8pJg&usqp=CAU" />
+      <div class="dog-review">
+        <p>I love this website! I'm a tough guy looking for a big scary dog and I found it. Don't f**k with me or my dog
+          will f**k you up!</p>
+      </div>
+      <span class="breed-badge">Cane Corso</span>
+    </div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <!-- PROGRESS TRACKER  -->
+
+  <div class="progress-tracker">
+    <div class="container">
+      <h1> How we're tracking</h1>
+      <h4> Snapshot of our progress so far </h4>
+
+      <div class="inner-container">
+        <div class="outcome outcome1">
+          <img class="outcome-icon outcome-icon1"
+            src="https://d339b5nop2tkmp.cloudfront.net/assets/mega-nav/pet-owners-357a16c9b4d6f7d9d8a27da3f831fdbacc70042fe857128eff8c68ee2193710c.svg" />
+          <div class="outcome-text outcome-text1">
+            <h1>250</h1>
+            <p>Families have used our free service</p>
+          </div>
+        </div>
+
+        <div class="outcome outcome2">
+          <img class="outcome-icon outcome-icon2"
+            src="https://d339b5nop2tkmp.cloudfront.net/assets/mega-nav/shelter-8fda23a8bc1c61c6f42e9a9bca3e225ea6128b90e4164646f3ab31f50b5fb13b.svg" />
+          <div class="outcome-text outcome-text2">
+            <h1>125</h1>
+            <p>Dogs were rescued from the pound </p>
+          </div>
+        </div>
+
+        <div class="outcome outcome3">
+          <img class="outcome-icon outcome-icon3"
+            src="https://d339b5nop2tkmp.cloudfront.net/assets/mega-nav/all-dogs-179000ffc65ae9607d7a8d8d2e15116f7809a1a60329a1a91601f41603d8ba5e.svg" />
+          <div class="outcome-text outcome-text3">
+            <h1>52</h1>
+            <p>Breeds are detailed on our website</p>
+          </div>
+        </div>
+
+        <div class="outcome outcome4">
+          <img class="outcome-icon outcome-icon4"
+            src="https://d339b5nop2tkmp.cloudfront.net/assets/mega-nav/paw-17eee3a5a2b112412e7c2e3c4ef62f8f9b495fa8734d852b443739d45a08719a.svg" />
+          <div class="outcome-text outcome-text4">
+            <h1>80%</h1>
+            <p>Users feel better informed about breeds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>2023 Woofers. Made in Melbourne.</footer>
+
+  <!-- DONATION FORM -->
+  <div class="form-container">
+    <form id="application-form">
+      <img src="https://www.svgrepo.com/show/49938/close-cross.svg" alt="donation-close-btn" id="donation-close-btn">
+
+      <h3>Thanks for visiting Woofers!</h3>
+      <p>If you're enjoying our website, please leave a small donation to help keep the site up and running.</p>
+
+      <fieldset>
+        <legend>Your Contact Info</legend>
+
+        <div class="inputs">
+          <label for="your-name">Name</label>
+          <input type="text" id="name" placeholder="First" name="your-name" required>
+          <input type="text" id="name" placeholder="Last" name="your-name">
+        </div>
+
+        <div class="inputs">
+          <label for="email">Email Address</label>
+          <input type="text" id="mobile" placeholder="@gmail.com" name="mobile">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Donation</legend>
+        <div class="inputs">
+          <label for="amount">Amount (AUD)</label>
+          <div class="donation-amounts">
+            <input id="2dollars" type="radio" name="2dollars" required>
+            <label for="2dollars">$2</label>
+            <br>
+            <input id="5dollars" type="radio" name="5dollars" required>
+            <label for="5dollars">$5</label>
+            <br>
+            <input id="10dollars" type="radio" name="10dollars" required>
+            <label for="10dollars">$10</label>
+            <br>
+            <input id="25dollars" type="radio" name="25dollars" required>
+            <label for="25dollars">$25</label>
+            <br>
+            <input id=50dollars" type="radio" name="50dollars" required>
+            <label for="50dollars">$50</label>
+            <br>
+          </div>
+      </fieldset>
+      <div class="inputs">
+        <label for="Message">Message (optional)</label>
+        <textarea id="past-experience" name="past-experience"></textarea>
+      </div>
+
+      <p>A secure payment form will open once you hit 'submit'.</p>
+      <input type="submit" value="Submit" id="submit-button">
+    </form>
+  </div>
+
+</body>
+
+</html>
