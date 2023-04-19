@@ -431,7 +431,7 @@ main {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
 }
 
@@ -472,7 +472,7 @@ main {
 
     .group {
         width: 30%;
-        height: 340px;
+        height: 300px;
         margin: 10px;
         margin-bottom: 5px;
     }
@@ -550,6 +550,10 @@ main {
     .breed-badge {
         padding: 10px;
         font-size: 100%;
+    }
+
+    .dog-review {
+        margin: 10px;
     }
 }
 
@@ -674,16 +678,16 @@ main {
 
 .rescue-tv-section {
     text-align: center;
-    width: 100vw;
+    /* width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .tv {
     background-color: lightgray;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
-    margin: 50px;
+    margin: 50px 60px;
     padding: 20px;
 }
 
@@ -730,7 +734,13 @@ main {
     background-color: #888;
   }
 
-  @media (min-width: 960px) {
+@media (min-width: 768px) {
+    .tv {
+        margin: 10% 20%;
+    }
+  }
+
+@media (min-width: 960px) {
 
 .rescue-tv-section {
     display: none;
@@ -784,7 +794,8 @@ main {
 }
 
 .outcome-text p {
-    margin-top: -20px;
+    margin-top: -30px;
+    padding: 5px;
 }
 
 .outcome-icon {
