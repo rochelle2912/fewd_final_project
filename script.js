@@ -1,14 +1,12 @@
-// Donation Box
+// Donation Pop Up Form
 
 const donateBtn = document.querySelector('#donation-btn');
 const donateCrossBtn = document.querySelector('#donation-close-btn');
 const formContainer = document.querySelector('.form-container')
 
-
 function formAppears () {
 formContainer.classList.add('show-form')
 }
-
 donateBtn.addEventListener('click', formAppears);
 
 function formDisappears () {
@@ -17,13 +15,14 @@ function formDisappears () {
 donateCrossBtn.addEventListener('click', formDisappears);
 
 
-// Main Menu - Popular Breeds
+// Main Menu - Popular Breeds Mobile / iPad Gallery
 baguetteBox.run('.mobile-gallery', {
     animation: 'fadeIn',
     preload: 2
 });
 
-// Side Menu 
+
+// Side Menu Pop Up
 
 const burgerBtn = document.querySelector('#hamburger-button');
 const menu = document.querySelector('#side-menu')
@@ -32,7 +31,6 @@ const crossBtn = document.querySelector('#menu-close-button');
 function sideMenuAppears () {
 menu.classList.add('show-menu')
 }
-
 burgerBtn.addEventListener('click', sideMenuAppears);
 
 function sideMenuDisappears () {
@@ -40,11 +38,41 @@ function sideMenuDisappears () {
 }
 crossBtn.addEventListener('click', sideMenuDisappears);
 
-// Main Menu - Popular Breeds
-baguetteBox.run('.mobile-gallery', {
-    animation: 'fadeIn',
-    preload: 2
-});
+
+// Rescue Centres - TV Scroller
+
+const channelUpBtn = document.querySelector('#channel-up');
+const tvScreen = document.querySelector('.tv-screen');
+const channelDownBtn = document.querySelector('#channel-down');
+
+function changeChannelUp () {
+    const currentSrc = tvScreen.getAttribute('src')
+    if (currentSrc === 'img/gallery/rescue-centre1.png') {
+        tvScreen.src ='img/gallery/rescue-centre2.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre2.png') {
+        tvScreen.src = 'img/gallery/rescue-centre3.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre3.png') {
+        tvScreen.src = 'img/gallery/rescue-centre4.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre4.png') {
+        tvScreen.src = 'img/gallery/rescue-centre1.png'
+}
+}
+channelUpBtn.addEventListener('click', changeChannelUp);
+
+function changeChannelDown () {
+    const currentSrc = tvScreen.getAttribute('src')
+    if (currentSrc === 'img/gallery/rescue-centre4.png') {
+        tvScreen.src = 'img/gallery/rescue-centre3.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre3.png') {
+        tvScreen.src = 'img/gallery/rescue-centre2.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre2.png') {
+        tvScreen.src = 'img/gallery/rescue-centre1.png'
+    } else if (currentSrc === 'img/gallery/rescue-centre1.png') {
+        tvScreen.src = 'img/gallery/rescue-centre4.png'
+    }
+}
+channelDownBtn.addEventListener('click', changeChannelDown)
+
 
 // Testimonials Slideshow - Modified from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
 let slideIndex = 0;
@@ -67,12 +95,12 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 
+
 // How we're tracking
 
 const outcome1 = document.querySelector('.outcome1');
 const outcomeText1 = document.querySelector('.outcome-text1')
 const outcomeIcon1 = document.querySelector('.outcome-icon1')
-
 
 function showOutcome1() {
     outcomeText1.classList.add('outcome-text-show')
