@@ -47,28 +47,28 @@ const channelDownBtn = document.querySelector('#channel-down');
 
 function changeChannelUp () {
     const currentSrc = tvScreen.getAttribute('src')
-    if (currentSrc === 'img/gallery/rescue-centre1.png') {
-        tvScreen.src ='img/gallery/rescue-centre2.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre2.png') {
-        tvScreen.src = 'img/gallery/rescue-centre3.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre3.png') {
-        tvScreen.src = 'img/gallery/rescue-centre4.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre4.png') {
-        tvScreen.src = 'img/gallery/rescue-centre1.png'
+    if (currentSrc === 'img/gallery/Rescue-centre1.png') {
+        tvScreen.src ='img/gallery/Rescue-centre2.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre2.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre3.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre3.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre4.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre4.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre1.png'
 }
 }
 channelUpBtn.addEventListener('click', changeChannelUp);
 
 function changeChannelDown () {
     const currentSrc = tvScreen.getAttribute('src')
-    if (currentSrc === 'img/gallery/rescue-centre4.png') {
-        tvScreen.src = 'img/gallery/rescue-centre3.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre3.png') {
-        tvScreen.src = 'img/gallery/rescue-centre2.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre2.png') {
-        tvScreen.src = 'img/gallery/rescue-centre1.png'
-    } else if (currentSrc === 'img/gallery/rescue-centre1.png') {
-        tvScreen.src = 'img/gallery/rescue-centre4.png'
+    if (currentSrc === 'img/gallery/Rescue-centre4.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre3.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre3.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre2.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre2.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre1.png'
+    } else if (currentSrc === 'img/gallery/Rescue-centre1.png') {
+        tvScreen.src = 'img/gallery/Rescue-centre4.png'
     }
 }
 channelDownBtn.addEventListener('click', changeChannelDown)
