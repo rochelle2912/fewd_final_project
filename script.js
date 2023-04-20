@@ -1,5 +1,4 @@
 // Donation Pop Up Form
-
 const donateBtn = document.querySelector('#donation-btn');
 const donateCrossBtn = document.querySelector('#donation-close-btn');
 const formContainer = document.querySelector('.form-container')
@@ -23,7 +22,6 @@ baguetteBox.run('.mobile-gallery', {
 
 
 // Side Menu Pop Up
-
 const burgerBtn = document.querySelector('#hamburger-button');
 const menu = document.querySelector('#side-menu')
 const crossBtn = document.querySelector('#menu-close-button');
@@ -40,7 +38,6 @@ crossBtn.addEventListener('click', sideMenuDisappears);
 
 
 // Rescue Centres - TV Scroller
-
 const channelUpBtn = document.querySelector('#channel-up');
 const tvScreen = document.querySelector('.tv-screen');
 const channelDownBtn = document.querySelector('#channel-down');
@@ -97,7 +94,6 @@ function showSlides() {
 
 
 // How we're tracking
-
 const outcome1 = document.querySelector('.outcome1');
 const outcomeText1 = document.querySelector('.outcome-text1')
 const outcomeIcon1 = document.querySelector('.outcome-icon1')

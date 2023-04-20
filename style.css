@@ -8,7 +8,6 @@ body {
 h1 {
     font-size: 36px;
     font-family: 'PT Sans Caption', sans-serif;
-
 }
 
 /* HEADER */
@@ -121,11 +120,9 @@ nav a {
     background-image: url("https://bhf-cdn.azureedge.net/bhf-blob-prod/0056625_yoop-grey-dog-wallpaper_600.jpeg");
     padding: 8px 16px;
     transition: all 420ms ease-in-out;
-    /* opacity: 0.95; */
 }
 
 .side-menu-content {
-    /* padding-left: 80px; */
     list-style-type: none;
     font-size: 24px;
     margin: 25px;
@@ -167,7 +164,7 @@ nav a {
     font-size: 50px;
 }
 
-/* Animation for side-menu */
+/* ANIMATION FOR SIDE-MENU */
 .show-menu {
     opacity: 1;
     transform: translateX(0%);
@@ -209,11 +206,6 @@ nav a {
         padding-left: 200px;
         height: 600px;
     }
-
-    /* .search-box {
-        margin-left: 200px;
-    } */
-
 }
 
 @media (min-width: 960px) {
@@ -252,26 +244,12 @@ main {
 
 @media (min-width: 768px) {
 
-    /* .mobile-gallery {
-        display: none;
-    }
-     */
-
     .mobile-gallery img {
         width: 40%;
         border-radius: 5px;
         margin: 30px;
         height: 20%;
     }
-
-    /* main {
-        background-color: #f2f2f2;
-        display: grid;
-        grid-column: 1/4;
-        padding: 20px;
-        text-align: center;
-        justify-content: center;
-    } */
 
     .popular-breeds {
         display: none;
@@ -296,18 +274,7 @@ main {
     .img_img {
         width: 100%;
         height: 100%;
-        /* border-radius: 10px; */
     }
-
-
-    /* .img_description {
-        display: none;
-    } */
-
-    /* .popular-breeds {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    } */
 
     .img_wrap {
         position: relative;
@@ -577,36 +544,6 @@ main {
     display: none;
 }
 
-/* .bottom-nav {
-    display: grid;
-    justify-content: center;
-    grid-column: 1/4;
-    grid-row: 4/5;
-    text-align: center;
-    padding: 10px;
-    background-size: cover;
-    align-items: center;
-}
-
-.pound-box {
-    background-color: rgba(211, 211, 211, .8);
-    height: 400px;
-    margin: 90px;
-    border-radius: 10px;
-    padding: 40px;
-}
-
-.rescue-centres {
-    display: flex;
-    margin: 10px;
-    justify-content: center;
-}
-
-.bottom-nav img {
-    height: 100px;
-    margin: 0px 50px 0px 50px;
-} */
-
 @media (min-width: 960px) {
 
     .bottom-nav {
@@ -654,7 +591,6 @@ main {
     }
 
     .pound-description {
-        /* display: none; */
         position: absolute;
         top: 0;
         left: 0;
@@ -688,13 +624,10 @@ main {
     }
 }
 
-/* Mobile / iPad Rescue TV Section */
+/* MOBILE & IPAD POUND SECTION */
 
 .rescue-tv-section {
     text-align: center;
-    /* width: 100%;
-    display: flex;
-    justify-content: center; */
 }
 
 .tv {
@@ -838,7 +771,6 @@ main {
         position: relative;
         padding: 20px;
     }
-
 }
 
 @media (min-width: 960px) {
@@ -869,7 +801,6 @@ main {
     .outcome-icon {
         display: block;
     }
-
 }
 
 /* FOOTER */
@@ -880,14 +811,9 @@ footer {
     background-color: #f2f2f2;
     display: grid;
     grid-column: 1/4;
-    /* grid-row: 6/7; */
     border-left: lightgrey solid 1px;
     border-right: lightgrey solid 1px;
     border-bottom: lightgrey solid 1px;
-    /* position: fixed; */
-    /* bottom: 0;
-    left: 0;
-    width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -899,7 +825,6 @@ footer {
     color: white;
     width: 300px;
     padding: 14px;
-    /* height: 35px; */
     text-decoration: none;
     font-size: 20px;
     background-color: #14a96d;
@@ -959,7 +884,7 @@ main .button {
 
 }
 
-/* FORM */
+/* DONATION FORM */
 
 #donation-btn {
     display: none;
@@ -1020,7 +945,7 @@ form {
         margin-left: 40%;
     }
 
-    /* Animation for form */
+    /* ANIMATION FOR DONATION FORM */
 
     .form-container {
         width: 100vw;
@@ -1037,7 +962,6 @@ form {
         opacity: 1;
         visibility: visible;
     }
-
 
     .show-form form {
         opacity: 1;
